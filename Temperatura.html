@@ -37,7 +37,7 @@
 				
 					
                     <li>
-                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard fa-3x"></i>Inicio</a>
+                        <a  href="index.html"><i class="fa fa-dashboard fa-3x"></i>Inicio</a>
                     </li>
                       <li>
                         <a  href="calculadora.html"><i class="fa fa-desktop fa-3x"></i>Calculadora</a>
@@ -46,7 +46,7 @@
                         <a  href="instructores.html"><i class="fa fa-qrcode fa-3x"></i>instructores</a>
                     </li>
 						   <li  >
-                        <a  href="Temperatura.html"><i class="fa fa-bar-chart-o fa-3x"></i>temperatura</a>
+                        <a class="active-menu" href="Temperatura.html"><i class="fa fa-bar-chart-o fa-3x"></i>temperatura</a>
                     </li>	
                       <li  >
                         <a  href="Triangulos.html"><i class="fa fa-table fa-3x"></i>Triangulos</a>
@@ -56,7 +56,7 @@
                     </li>				
 					
                   <li  >
-                        <a   href="formulario.html"><i class="fa fa-square-o fa-3x"></i> Formulario</a>
+                        <a  href="formulario.html"><i class="fa fa-square-o fa-3x"></i> Formulario</a>
                     </li>	
                 </ul>
                
@@ -69,13 +69,40 @@
                 <div class="row">
                     <div class="col-md-12">
                      <h2>Bienvenido</h2>   
-                        <h5>Elija algunos de los Ejercicios </h5>
+                        <h5>Convertidor de temperaturas. </h5>
                        
                     </div>
                 </div>
                  <!-- /. ROW  -->
                  <hr />
-               <img src="https://acegif.com/wp-content/uploads/2021/4fh5wi/bienvnds-15.gif" alt="">
+                 <div class="ejer">
+                    <center> <h1>Temperatura</h1></center>
+                     <div class="cuadro">
+                         <input type="number" id="v" >
+                 </div>
+                 <div class="principal">
+             <div>
+                 <span>Vas a convertir de:</span>
+                 <select name="valo1"id="valor1">
+                 <option value="">Elegir</option>
+                 <option value="Fahrenheit">Fahrenheit</option>
+                 <option value="Celsius">Celsius</option>
+                 <option value="Kelvin">Kelvin</option>
+             </select>
+             
+             <span>Deseas convertir a:</span>
+             <select name="valor2"id="valor2">
+                 <option value="">Elegir</option>
+                 <option value="Fahrenheit">Fahrenheit</option>
+                 <option value="Celsius">Celsius</option>
+                 <option value="Kelvin">Kelvin</option>
+             </select>
+             </div>
+               
+               
+             </div>
+               
+             </div>
     </div>
              <!-- /. PAGE INNER  -->
             </div>
@@ -91,6 +118,7 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    <script src="js/Temperatura.js"></script>
     
    
 </body>

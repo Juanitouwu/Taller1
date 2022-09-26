@@ -19,16 +19,16 @@
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
+                    <span class="fa fa-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Ejercicios js</a> 
+                <a class="navbar-brand" href="index.html">Ejercicios JS</a> 
             </div>
 
         </nav>   
            <!-- /. NAV TOP  -->
-                <nav class="navbar-default navbar-side" role="navigation">
+           <nav class="navbar-default navbar-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 				<li class="text-center">
@@ -37,10 +37,10 @@
 				
 					
                     <li>
-                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard fa-3x"></i>Inicio</a>
+                        <a  href="index.html"><i class="fa fa-dashboard fa-3x"></i>Inicio</a>
                     </li>
                       <li>
-                        <a  href="calculadora.html"><i class="fa fa-desktop fa-3x"></i>Calculadora</a>
+                        <a class="active-menu"  href="calculadora.html"><i class="fa fa-desktop fa-3x"></i>Calculadora</a>
                     </li>
                     <li>
                         <a  href="instructores.html"><i class="fa fa-qrcode fa-3x"></i>instructores</a>
@@ -65,22 +65,41 @@
         </nav>  
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
-            <div id="page-inner">
-                <div class="row">
-                    <div class="col-md-12">
-                     <h2>Bienvenido</h2>   
-                        <h5>Elija algunos de los Ejercicios </h5>
-                       
-                    </div>
-                </div>
-                 <!-- /. ROW  -->
-                 <hr />
-               <img src="https://acegif.com/wp-content/uploads/2021/4fh5wi/bienvnds-15.gif" alt="">
-    </div>
-             <!-- /. PAGE INNER  -->
-            </div>
-         <!-- /. PAGE WRAPPER  -->
-        </div>
+          <div id="page-inner">
+              <div class="row">
+                  <div class="col-md-12">
+                   <h2>Bienvenido a la calculadora</h2>   
+                      <h5>Digite numeros y haga operaciones </h5>
+                     
+                  </div>
+              </div>
+     <div>
+      <div id="page-wrapper">
+        <table class="calculadora" >
+        <tr>
+          <td colspan="4"><span id="resultado"></span></td>
+        </tr>
+        <tr>
+          <td><button id="siete">7</button></td><td><button id="ocho">8</button></td><td><button id="nueve">9</button></td><td><button id="division">/</button></td>
+        </tr>
+        <tr>
+          <td><button id="cuatro">4</button></td><td><button id="cinco">5</button></td><td><button id="seis">6</button></td><td><button id="multiplicacion">*</button></td>
+        </tr>
+        <tr>
+          <td><button id="uno">1</button></td><td><button id="dos">2</button></td><td><button id="tres">3</button></td><td><button id="resta">-</button></td>
+        </tr>
+        <tr>
+          <td><button id="igual">=</button></td><td><button id="reset">C</button></td><td><button id="cero">0</button></td><td><button id="suma">+</button></td>
+        </tr>
+      </div>
+        </table>
+      </div>
+        
+
+        
+
+        <script src="assets/js/funcionalidad.js"></script>
+       
      <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
@@ -91,7 +110,6 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-    
-   
+ 
 </body>
 </html>

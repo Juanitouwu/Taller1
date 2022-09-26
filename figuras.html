@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicios js</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <link rel="stylesheet" href="styles/modales.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Ejercicios js</a> 
+            </div>
+
+        </nav>   
+           <!-- /. NAV TOP  -->
+                <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+				<li class="text-center">
+                    <img src="assets/img/find_user.png" class="user-image img-responsive"/>
+					</li>
+				
+					
+                    <li>
+                        <a  href="index.html"><i class="fa fa-dashboard fa-3x"></i>Inicio</a>
+                    </li>
+                      <li>
+                        <a  href="calculadora.html"><i class="fa fa-desktop fa-3x"></i>Calculadora</a>
+                    </li>
+                    <li>
+                        <a  href="instructores.html"><i class="fa fa-qrcode fa-3x"></i>instructores</a>
+                    </li>
+						   <li  >
+                        <a  href="Temperatura.html"><i class="fa fa-bar-chart-o fa-3x"></i>temperatura</a>
+                    </li>	
+                      <li  >
+                        <a  href="Triangulos.html"><i class="fa fa-table fa-3x"></i>Triangulos</a>
+                    </li>
+                    <li  >
+                        <a  class="active-menu" href="figuras.html"><i class="fa fa-edit fa-3x"></i>figuras</a>
+                    </li>				
+					
+                  <li  >
+                        <a   href="formulario.html"><i class="fa fa-square-o fa-3x"></i> Formulario</a>
+                    </li>	
+                </ul>
+               
+            </div>
+            
+        </nav>  
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" >
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                     <h2>Bienvenido</h2>   
+                        <h5>Calcule el area y perimetro de algunas figuras. </h5>
+                       
+                    </div>
+                </div>
+                 <!-- /. ROW  -->
+                 <hr />
+                 <div class="cards">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                      <div class="col">
+                        <div class="card">
+                          <img src="./img/circulo.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Circulo</h5>
+                            <p class="card-text">El círculo es una región del plano delimitada por una circunferencia y, por tanto, tiene asociada un área.</p>
+                            <a id="PerimetroCirculo" class="btn btn-primary">Perimetro</a>
+                            <div id="ventanaPerimetroCirculo" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarPerimetroCirculo"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Perimetro circulo</h2>
+                                  <label for="">Radio </label><br>
+                                  <input id="radio" type="number" placeholder="Digite el radio del circulo"><br>
+                                  <button class="boton" id="boton-circulo">Calcular</button>
+                              </div>
+                            </div>
+                            <a id="AreaCirculo" class="btn btn-primary">Area</a>
+                            <div id="ventanaAreaCirculo" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarAreaCirculo"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Area circulo</h2>
+                                  <label for="">Radio </label><br>
+                                  <input id="radio-area" type="number" placeholder="Digite el radio del circulo"><br>
+                                  <button class="boton" id="boton-circulo-area">Calcular</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="./img/triangulo.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Triangulo</h5>
+                            <p class="card-text">En geometría plana, se llama triángulo, trígono o trigonoide al polígono de tres lados.</p>
+                            <a id="PerimetroTriangulo" class="btn btn-primary">Perimetro</a>
+                            <div id="ventanaPerimetroTriangulo" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarPerimetroTriangulo"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Perimetro triangulo</h2>
+                                  <label for="">Lado 1 </label><br>
+                                  <input id="triangulo-lado1" type="number" placeholder="Digite el lado del triangulo"><br>
+                                  <label for="">Lado 2 </label><br>
+                                  <input id="triangulo-lado2" type="number" placeholder="Digite el lado del triangulo"><br>
+                                  <label for="">Lado 3 </label><br>
+                                  <input id="triangulo-lado3" type="number" placeholder="Digite el lado del triangulo"><br>
+                                  <button class="boton" id="boton-triangulo">Calcular</button>
+                              </div>
+                            </div>
+                            <a id="AreaTriangulo" class="btn btn-primary">Area</a>
+                            <div id="ventanaAreaTriangulo" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarAreaTriangulo"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Area triangulo</h2>
+                                  <label for="">Base </label><br>
+                                  <input id="base-triangulo" type="number" placeholder="Digite la base del triangulo"><br>
+                                  <label for="">Altura </label><br>
+                                  <input id="altura-triangulo" type="number" placeholder="Digite la altura del triangulo"><br>
+                                  <button class="boton" id="boton-triangulo-area">Calcular</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="./img/rectangulo.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Rectangulo</h5>
+                            <p class="card-text">En geometría plana, un rectángulo es un paralelogramo cuyos cuatro lados forman ángulos rectos entre sí.</p>
+                            <a id="PerimetroRectangulo" class="btn btn-primary">Perimetro</a>
+                            <div id="ventanaPerimetroRectangulo" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarPerimetroRectangulo"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Perimetro rectangulo</h2>
+                                  <label for="">Base </label><br>
+                                  <input id="rectangulo-base" type="number" placeholder="Digite la base del rectangulo"><br>
+                                  <label for="">Altura </label><br>
+                                  <input id="rectangulo-altura" type="number" placeholder="Digite la altura del rectangulo"><br>
+                                  <button class="boton" id="boton-rectangulo">Calcular</button>
+                              </div>
+                            </div>
+                            <a id="AreaRectangulo" class="btn btn-primary">Area</a>
+                            <div id="ventanaAreaRectangulo" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarAreaRectangulo"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Area rectangulo</h2>
+                                  <label for="">Base </label><br>
+                                  <input id="rectangulo-base-area" type="number" placeholder="Digite la base del rectangulo"><br>
+                                  <label for="">Altura </label><br>
+                                  <input id="rectangulo-altura-area" type="number" placeholder="Digite la altura del rectangulo"><br>
+                                  <button class="boton" id="boton-rectangulo-area">Calcular</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="./img/cuadrado.png" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Cuadrado</h5>
+                            <p class="card-text">Un cuadrado en geometría es un cuadrilátero regular, es decir, una figura plana de cuatro lados congruentes y paralelos dos a dos.</p>
+                            <a id="PerimetroCuadrado" class="btn btn-primary">Perimetro</a>
+                            <div id="ventanaPerimetroCuadrado" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarPerimetroCuadrado"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Perimetro del cuadrado</h2>
+                                  <label for="">Lado </label><br>
+                                  <input id="cuadrado-lado" type="number" placeholder="Digite el lado del cuadrado"><br>
+                                  <button class="boton" id="boton-cuadrado">Calcular</button>
+                              </div>
+                            </div>
+                            <a id="AreaCuadrado" class="btn btn-primary">Area</a>
+                            <div id="ventanaAreaCuadrado" class="modal">
+                              <div class="contenidoModal">
+                                  <span class="cerrarAreaCuadrado"><i class="fa-solid fa-xmark"></i></span>
+                                  <h2>Area del cuadrado</h2>
+                                  <label for="">base </label><br>
+                                  <input id="cuadrado-base" type="number" placeholder="Digite la base del cuadrado"><br>
+                                  <label for="">Altura </label><br>
+                                  <input id="cuadrado-altura" type="number" placeholder="Digite la altura del cuadrado"><br>
+                                  <button class="boton" id="boton-cuadrado-area">Calcular</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+                    <script src="./js/Ejercicio_5.js"></script>
+                    <script src="./js/modales.js"></script>
+   
+             <!-- /. PAGE INNER  -->
+            </div>
+         <!-- /. PAGE WRAPPER  -->
+        </div>
+     <!-- /. WRAPPER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+      <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+      <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+    <script src="js/figuras.js"></script>
+    
+    
+   
+</body>
+</html>
