@@ -65,67 +65,49 @@
         </nav>  
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" >
-            <div id="page-inner">
-                <div class="row">
-                    <div class="col-md-12">
-                     <h2>Bienvenido</h2>   
-                        <h5></h5>
-                       
-                    </div>
+            <div class="form">
+                <select id="nom" class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione Nombre</option>
+                  <option value="1">Tatiana</option>
+                  <option value="2">Adriana</option>
+                  <option value="3">Yaneth</option>
+                  <option value="4">Luis</option>
+                  <option value="5">Cristian</option>
+                  <option value="6">Carolina</option>
+                  <option value="7">Fernando</option>
+                </select>
+              </div>
+              <div class="form">
+                <select id="ape" class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione Apellido </option>
+                  <option value="1">Cabrera</option>
+                  <option value="2">Duarte</option>
+                  <option value="3">Castañeda</option>
+                  <option value="4">Baquero</option>
+                  <option value="5">Buitrago</option>
+                  <option value="6">Forero</option>
+                  <option value="7">Galindo</option>
+                </select>
+              </div>
+              <div class="form">
+                <select id="mate" class="form-select" aria-label="Default select example">
+                  <option selected>Seleccione Materia</option>
+                  <option value="1">Javascript</option>
+                  <option value="2">Diseño</option>
+                  <option value="3">Gestion abiental</option>
+                  <option value="4">Cultura fisica</option>
+                  <option value="5">PHP</option>
+                  <option value="6">Proyecto</option>
+                  <option value="7">Base de datos</option>
+                  <option value="8">Calidad de software</option>
+                </select>
+              </div>
+              <div class="botones">
+                <div class="text-center">
+                  <a id="boton" class="btn btn-primary" role="button">Respuesta</a>
+                  <a class="btn btn-primary" href="index.html" role="button">Regresar</a>
                 </div>
-                 <!-- /. ROW  -->
-                 <hr />
-                 <div class="ejer">
-                    <center> <h1>Instructores</h1></center>
-                     <div class="cuadro">
-                 </div>
-                 <div class="principal">
-             <div>
-                 <span>Nombres:</span>
-                 <select name="valo1"id="valor1">
-                 <option value="">Elegir</option>
-                 <option value="Carolina">Carolina</option>
-                 <option value="Adriana">Adriana</option>
-                 <option value="Tatiana">Tatiana</option>
-                 <option value="Fernando">Fernando</option>
-                 <option value="Jhonatan">Jhonatan</option>
-                 <option value="Luis">Luis</option>
-                 <option value="Yaneth">Yaneth</option>
-             </select>
-             
-             <span>Apellidos:</span>
-             <select name="valor2"id="valor2">
-                 <option value="Forero">Forero</option>
-                 <option value="Duarte">Duarte</option>
-                 <option value="Cabrera">Cabrera</option>
-                 <option value="Galindo">Galindo</option>
-                 <option value="Espitia">Espitia</option>
-                 <option value="Baquero">Baqueros</option>
-                 <option value="Castillo">Castillo</option>  
-             </select>
-             
-             <span>Actividades:</span>
-             <select name="valor3"id="valor3">
-                 <option value="">Elegir</option>
-                 <option value="Seg">Seg proyecto</option>
-                 <option value="Diseño">Diseño</option>
-                 <option value="Calidad">Calidad</option>
-                 <option value="Bd">Base datos</option>
-                 <option value="Php">Php</option>
-                 <option value="Cultura">Cultura Fisica</option>
-                 <option value="Gestion">Gestion ambiental</option>
-                 <option value="Front">Front end</option>
-             </select>
-             <br>
-             <br>
-             <br>
-                 <center><button class="n" onclick="Respuesta();">respuesta</button></center>
-             </div>
-               
-               
-             </div>
-               
-             </div>
+              </div>
     </div>
              <!-- /. PAGE INNER  -->
             </div>
@@ -141,6 +123,7 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    <script src="js/instructores.js"></script>
     
    
 </body>
