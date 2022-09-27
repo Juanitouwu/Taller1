@@ -11,8 +11,10 @@
         <!-- CUSTOM STYLES-->
     <link href="assets/css/custom.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
+     <link rel="stylesheet" href="styles/styles.css">
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
    <link rel="stylesheet" href="styles/modales.css">
+   <script src="https://kit.fontawesome.com/c362bae9bb.js" crossorigin="anonymous"></script> 
 </head>
 <body>
     <div id="wrapper">
@@ -80,8 +82,9 @@
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                       <div class="col">
                         <div class="card">
-                          <img src="img/circulo.png" class="card-img-top" alt="...">
-                          <div class="card-body">
+                          
+                          <div class="card-body" align="center">
+                            <img src="img/circulo.png" class="card-img-top" alt="...">
                             <h5 class="card-title">Circulo</h5>
                             <p class="card-text">El círculo es una región del plano delimitada por una circunferencia y, por tanto, tiene asociada un área.</p>
                             <a id="PerimetroCirculo" class="btn btn-primary">Perimetro</a>
@@ -109,9 +112,12 @@
                       </div>
                       <div class="col">
                         <div class="card">
-                          <img src="img/triangulo.png" class="card-img-top" alt="...">
-                          <div class="card-body">
+                          <tr>
+                          
+                          <div class="card-body" align="center">
+                            <img src="img/triangulo.png" class="card-img-top" alt="...">
                             <h5 class="card-title">Triangulo</h5>
+
                             <p class="card-text">En geometría plana, se llama triángulo, trígono o trigonoide al polígono de tres lados.</p>
                             <a id="PerimetroTriangulo" class="btn btn-primary">Perimetro</a>
                             <div id="ventanaPerimetroTriangulo" class="modal">
@@ -126,6 +132,7 @@
                                   <input id="triangulo-lado3" type="number" placeholder="Digite el lado del triangulo"><br>
                                   <button class="boton" id="boton-triangulo">Calcular</button>
                               </div>
+                            </tr>
                             </div>
                             <a id="AreaTriangulo" class="btn btn-primary">Area</a>
                             <div id="ventanaAreaTriangulo" class="modal">
@@ -138,14 +145,15 @@
                                   <input id="altura-triangulo" type="number" placeholder="Digite la altura del triangulo"><br>
                                   <button class="boton" id="boton-triangulo-area">Calcular</button>
                               </div>
-                            </div>
+                            </div> 
                           </div>
                         </div>
                       </div>
                       <div class="col">
                         <div class="card">
-                          <img src="img/rectangulo.png" class="card-img-top" alt="...">
-                          <div class="card-body">
+                          
+                          <div class="card-body" align="center">
+                            <img src="img/rectangulo.png" class="card-img-top" alt="...">
                             <h5 class="card-title">Rectangulo</h5>
                             <p class="card-text">En geometría plana, un rectángulo es un paralelogramo cuyos cuatro lados forman ángulos rectos entre sí.</p>
                             <a id="PerimetroRectangulo" class="btn btn-primary">Perimetro</a>
@@ -177,8 +185,9 @@
                       </div>
                       <div class="col">
                         <div class="card">
-                          <img src="img/cuadrado.png" class="card-img-top" alt="...">
-                          <div class="card-body">
+                          
+                          <div class="card-body" align="center">
+                            <img src="img/cuadrado.png" class="card-img-top" alt="...">
                             <h5 class="card-title">Cuadrado</h5>
                             <p class="card-text">Un cuadrado en geometría es un cuadrilátero regular, es decir, una figura plana de cuatro lados congruentes y paralelos dos a dos.</p>
                             <a id="PerimetroCuadrado" class="btn btn-primary">Perimetro</a>
